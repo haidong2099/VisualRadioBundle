@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": "^7.1",
-        "contao/core-bundle": ">=4.4 || <5.0",
-        "symfony/framework-bundle": "^3.4 || ^4.0"
+        "contao/core-bundle": "^4.4 || <5.0",
+        "symfony/framework-bundle": "4.2.* || 4.3.*"
     },
     "conflict": {
         "contao/core": "*",
@@ -23,7 +23,10 @@
         "contao/manager-plugin": "^2.0"
     },
     "extra": {
-        "contao-manager-plugin": "Guave\\VisualRadio\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Guave\\VisualRadio\\ContaoManager\\Plugin",
+        "symfony": {
+            "require": "^4.2"
+        }
     },
     "minimum-stability": "stable",
     "autoload": {
