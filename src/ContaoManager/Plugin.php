@@ -1,6 +1,6 @@
 <?php
 
-namespace Guave\VisualRadio\ContaoManager;
+namespace Guave\VisualRadioBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerBundle\ContaoManagerBundle;
