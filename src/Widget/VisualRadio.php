@@ -1,6 +1,6 @@
 <?php
 
-namespace Guave\VisualRadio\Widget;
+namespace Guave\VisualRadioBundle\Widget;
 
 use Contao\Database\Result;
 use Contao\Widget;

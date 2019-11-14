@@ -23,7 +23,7 @@
         "contao/manager-plugin": "^2.0"
     },
     "extra": {
-        "contao-manager-plugin": "Guave\\VisualRadio\\ContaoManager\\Plugin",
+        "contao-manager-plugin": "Guave\\VisualRadioBundle\\ContaoManager\\Plugin",
         "symfony": {
             "require": "^4.2"
         }
@@ -31,7 +31,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Guave\\VisualRadio\\": "src/"
+            "Guave\\VisualRadioBundle\\": "src/"
         }
     }
 }
