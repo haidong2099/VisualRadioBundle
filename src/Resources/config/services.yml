@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Guave\VisualRadioBundle\:
+    resource: ../../../src
+    exclude: ../../../src/{Entity,Migrations,Resources,Tests}
+
+  Guave\VisualRadioBundle\Controller\:
+    resource: ../../../src/Controller
+    public: true
