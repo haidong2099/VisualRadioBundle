@@ -2,10 +2,8 @@
 
 namespace Guave\VisualRadioBundle\Widget\Backend;
 
-use Contao\Database\Result;
-use Contao\StringUtil;
-use Contao\Widget;
 use Contao\Image;
+use Contao\Widget;
 
 class VisualRadio extends Widget
 {
@@ -15,21 +13,25 @@ class VisualRadio extends Widget
 
     public function generate(): string
     {
-        $html = '<div>';
+        $html = '';
         foreach ($this->options as $option) {
             $id = $this->strName . '_' . $option['value'];
             $image = $this->imagePath . '/' . $option['value'] . $this->imageExt;
             $active = $this->varValue === $option['value'];
 
-            $html .= '<div style="width:25%;display:inline-block;text-align:center;margin-bottom:20px;">';
-            $html .= '<input type="radio" id="' . $id . '" name="' . $this->strName . '" value="' . $option['value'] . '"' . ($active ? ' checked' : '') . '/> ';
-            $html .= '<label for="' . $id . '">';
-            $html .= Image::getHtml($image, $option['value']);
-            $html .= '</label>';
-            $html .= '</div>';
+            $html .= sprintf(
+                '<div style="width:25%%;display:inline-block;text-align:center;margin-bottom:20px;">'
+                . '<input type="radio" id="%s" name="%s" value="%s"%s/>'
+                . '<label for="%s">%s</label>'
+                . '</div>',
+                $id,
+                $this->strName,
+                $option['value'],
+                $active ? 'checked' : '',
+                $id,
+                Image::getHtml($image, $option['value'])
+            );
         }
-
-        $html .= '</div>';
 
         return '<div>' . $html . '</div>';
     }

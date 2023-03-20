@@ -2,7 +2,7 @@
 	"name": "guave/visualradio-bundle",
 	"description": "Visual Radio Field for Contao 4.9+",
 	"type": "contao-bundle",
-	"license": "MIT",
+	"license": "ISC",
 	"authors": [
 		{
 			"name": "Christopher Stadler",
