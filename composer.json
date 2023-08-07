@@ -1,6 +1,6 @@
 {
 	"name": "guave/visualradio-bundle",
-	"description": "Visual Radio Field for Contao 4.9+",
+	"description": "Visual Radio Field for Contao 4.13+",
 	"type": "contao-bundle",
 	"license": "ISC",
 	"authors": [
